@@ -2,6 +2,8 @@ package fr.iut.editeur.commande;
 
 import fr.iut.editeur.document.Document;
 
+/**
+ * Definition de la commande ajouter et comment l'utiliser */
 public class CommandeAjouter extends CommandeDocument {
 
 
@@ -9,6 +11,9 @@ public class CommandeAjouter extends CommandeDocument {
         super(document, parameters);
     }
 
+    /**
+     * Ajoute du texte
+     * Aller voir la méthode {@link Document#ajouter(String)}*/
     @Override
     public void executer() {
         if(parameters.length < 2) {
